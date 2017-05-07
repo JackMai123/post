@@ -1,0 +1,31 @@
+<h1>
+
+  <button (click) ="OnTest()" > test</button>
+  <button (click) ="OnTest1()" > test1</button>
+<!-- {{title}} -->
+    <!-- {{getDatas}} -->
+</h1>
+<!--
+<div>
+  <button md-icon-button><md-icon>accessibility</md-icon></button>
+</div> -->
+
+
+
+
+       <md-chip-list    *ngFor="let getData of getDatas" >
+
+
+         <span class="md-toolbar">
+            <md-chip color="primary" selected="true" > {{getData.title}}</md-chip>
+          </span>
+
+            <button color="primary"  class=" closeButton"> x       </button>
+      </md-chip-list>
+
+<!-- <material-chips [(ngModel)]="tags" ></material-chips> -->
+
+
+     <!-- <ul>
+      <li *ngFor="let getData of getDatas">{{getData.title}}</li>
+    </ul> -->
